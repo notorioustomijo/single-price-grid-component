@@ -132,6 +132,12 @@ main {
     box-shadow: 0px 5px 20px 0px #6b6b6b;
 }
 
+.price-grid-price-section button:hover {
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+    transition: all 0.25s ease-in;
+}
+
 /* Price grid - second section - 2nd subsection styles */
 
 .price-grid-info-section {
