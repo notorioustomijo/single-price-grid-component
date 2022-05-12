@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans- serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Typography styles */
+
+h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.125rem;
+}
+
+
+/* Layout and Component styles */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+    height: 100vh;
+}
+
+main {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+/* Price pitch first section styles */
+
+.price-grid-pitch {
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.price-grid-pitch h1 {
+    margin-bottom: 24px;
+    color: hsl(179, 62%, 43%);
+}
+
+.price-grid-pitch h2 {
+    margin-bottom: 16px;
+    color: hsl(71, 73%, 54%);
+}
+
+.price-grid-pitch p {
+    width: 100%;
+    color: hsl(218, 22%, 67%);
+
+}
+
+/* Price grid - second section styles */
+
+.price-grid-price-info-section {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+
+}
+
+/* Price grid - second section - 1st subsection styles */
+.price-grid-price-section {
+    width: 50%;
+    padding: 32px 40px;
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 8px;
+}
+
+.price-grid-price-section h2 {
+    margin-bottom: 32px;
+    color: white;
+}
+
+.price-grid-price-section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    height: 20%;
+    color: white;
+
+}
+
+.price-grid-price-section .price-number {
+    font-size: 2rem;
+    margin-right: 8px;
+}
+
+.price-grid-price-section p {
+    margin-bottom: 24px;
+    color: white;
+}
+
+.price-grid-price-section button {
+    width: 100%;
+    height: 3rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 5px 20px 0px #6b6b6b;
+}
+
+/* Price grid - second section - 2nd subsection styles */
+
+.price-grid-info-section {
+    padding: 32px 40px;
+    border-bottom-right-radius: 8px;
+    width: 50%;
+    background-color: hsl(179, 60%, 49%);
+    color: white;
+}
+
+.price-grid-info-section h2 {
+    margin-bottom: 16px;
+}
+
+.price-grid-info-section ul {
+    list-style-type: none;
+}
+
+
+/* ===MEDIA QUERIES==== */
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+
+    main {
+        width: 77%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 24px;
+        margin-bottom: 32px;
+        border-radius: 8px;
+    }
+
+    /* Price pitch first section styles */
+    .price-grid-pitch {
+        padding: 32px;
+    }
+
+    .price-grid-pitch p {
+        line-height: 2rem;
+
+    }
+
+
+    /* Price grid - second section styles */
+    .price-grid-price-info-section {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+
+    }
+
+    /* Price grid - second section - 1st subsection styles */
+    .price-grid-price-section {
+        width: 100%;
+        padding: 24px 40px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .price-grid-price-section div {
+        width: 40%;
+        height: 20%;
+
+    }
+
+    /* Price grid - second section - 2nd subsection styles */
+    .price-grid-info-section {
+        padding: 24px 40px;
+        width: 100%;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .price-grid-info-section ul li {
+        margin-bottom: 4px;
+    }
+
+}
